@@ -54,7 +54,7 @@ export const WhyChooseSection = () => {
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent/5 to-transparent" />
       
       <div className="container mx-auto px-4 relative">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Content */}
           <div className="space-y-8">
             <div>
