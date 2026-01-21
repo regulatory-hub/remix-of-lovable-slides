@@ -1,20 +1,24 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
 
 const quickLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "Industries", href: "/industries" },
+  { name: "How We Work", href: "/how-we-work" },
+  { name: "Why Choose Us", href: "/why-choose-us" },
   { name: "Contact", href: "/contact" },
 ];
 
 const services = [
-  { name: "BIS-CRS Certification", href: "/services" },
-  { name: "ISI Certification", href: "/services" },
-  { name: "CE Marking", href: "/services" },
-  { name: "WPC ETA", href: "/services" },
-  { name: "TEC / MTCTE", href: "/services" },
+  { name: "BIS-CRS Certification", href: "/services#bis-crs" },
+  { name: "ISI Certification", href: "/services#isi" },
+  { name: "CE Marking", href: "/services#ce" },
+  { name: "WPC ETA Certification", href: "/services#wpc-eta" },
+  { name: "TEC / MTCTE", href: "/services#tec-mtcte" },
+  { name: "CB Certification", href: "/services#cb" },
+  { name: "EPR Certification", href: "/services#epr" },
 ];
 
 export const Footer = () => {
@@ -29,8 +33,47 @@ export const Footer = () => {
               <span className="font-heading text-lg font-medium opacity-80">Testing Lab</span>
             </div>
             <p className="text-sm leading-relaxed opacity-80">
-              Quick & Simplified Certification & Compliance Partner. We help manufacturers and importers meet regulatory requirements with speed, clarity, and confidence.
+              Quick & Simplified — Your trusted partner for testing, certification, and regulatory compliance. Helping manufacturers and importers navigate complex regulations with speed and clarity.
             </p>
+            {/* Social Icons */}
+            <div className="flex items-center gap-4 pt-2">
+              <a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="opacity-70 hover:opacity-100 transition-opacity"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="opacity-70 hover:opacity-100 transition-opacity"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://twitter.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="opacity-70 hover:opacity-100 transition-opacity"
+                aria-label="Twitter"
+              >
+                <Twitter className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="opacity-70 hover:opacity-100 transition-opacity"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -71,17 +114,17 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-heading text-lg font-semibold">Contact Us</h4>
             <div className="space-y-3">
-              <div className="flex items-start gap-3">
+              <a href="mailto:info@qnstestinglab.com" className="flex items-start gap-3 hover:opacity-100 transition-opacity">
                 <Mail className="h-5 w-5 mt-0.5 opacity-80" />
                 <span className="text-sm opacity-80">info@qnstestinglab.com</span>
-              </div>
-              <div className="flex items-start gap-3">
+              </a>
+              <a href="tel:+919876543210" className="flex items-start gap-3 hover:opacity-100 transition-opacity">
                 <Phone className="h-5 w-5 mt-0.5 opacity-80" />
-                <span className="text-sm opacity-80">+91-XXXXXXXXXX</span>
-              </div>
+                <span className="text-sm opacity-80">+91 98765 43210</span>
+              </a>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-0.5 opacity-80" />
-                <span className="text-sm opacity-80">India</span>
+                <span className="text-sm opacity-80">Delhi NCR, India</span>
               </div>
             </div>
           </div>
