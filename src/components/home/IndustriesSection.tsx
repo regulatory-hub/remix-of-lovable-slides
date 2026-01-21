@@ -49,8 +49,14 @@ const industries = [
 
 export const IndustriesSection = () => {
   return (
-    <section className="py-20 lg:py-28 bg-background overflow-hidden">
-      <div className="container mx-auto px-4">
+    <section className="py-20 lg:py-28 bg-background overflow-hidden relative">
+      {/* Background Decoration */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+      </div>
+
+      <div className="container mx-auto px-4 relative">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content Side */}
           <div>
@@ -63,22 +69,22 @@ export const IndustriesSection = () => {
                 Expertise Across <span className="text-gradient">Multiple Sectors</span>
               </h2>
               <p className="text-muted-foreground text-lg">
-                We provide specialized compliance solutions for a wide range of industries and product categories.
+                We support a wide range of industries where regulatory compliance is essential for market entry and success.
               </p>
             </div>
 
             {/* Industries List */}
             <div className="space-y-3">
-              {industries.map((industry, index) => (
+              {industries.map((industry) => (
                 <div
                   key={industry.title}
-                  className="group flex items-center gap-4 p-4 bg-card rounded-xl border border-border/50 shadow-soft hover:shadow-card hover:border-accent/30 transition-all duration-300"
+                  className="group flex items-center gap-4 p-4 bg-card rounded-xl border border-border/50 shadow-soft hover:shadow-card hover:border-primary/30 transition-all duration-300 hover:-translate-x-1"
                 >
-                  <div className="w-12 h-12 shrink-0 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                    <industry.icon className="h-6 w-6 text-accent group-hover:text-accent-foreground transition-colors" />
+                  <div className="w-12 h-12 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                    <industry.icon className="h-6 w-6 text-primary group-hover:text-primary-foreground transition-colors" />
                   </div>
                   <div>
-                    <h3 className="font-heading text-base font-semibold text-foreground">
+                    <h3 className="font-heading text-base font-semibold text-foreground group-hover:text-primary transition-colors">
                       {industry.title}
                     </h3>
                     <p className="text-sm text-muted-foreground">
@@ -91,14 +97,14 @@ export const IndustriesSection = () => {
           </div>
 
           {/* Image Side */}
-          <div className="relative">
+          <div className="relative order-first lg:order-last">
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <img
                 src={industriesProducts}
                 alt="Various electronic and electrical products we certify"
                 className="w-full h-auto object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
             </div>
             
             {/* Floating Badge */}

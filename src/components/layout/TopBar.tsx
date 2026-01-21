@@ -8,11 +8,11 @@ export const TopBar = () => {
           {/* Contact Info */}
           <div className="flex items-center gap-6">
             <a 
-              href="tel:+919876543210" 
+              href="tel:+917082130463" 
               className="flex items-center gap-2 hover:text-secondary transition-colors"
             >
               <Phone className="h-3.5 w-3.5" />
-              <span>+91 98765 43210</span>
+              <span>+91 70821 30463</span>
             </a>
             <a 
               href="mailto:info@qnstestinglab.com" 
