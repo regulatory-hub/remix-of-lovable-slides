@@ -118,9 +118,9 @@ export const Footer = () => {
                 <Mail className="h-5 w-5 mt-0.5 opacity-80" />
                 <span className="text-sm opacity-80">info@qnstestinglab.com</span>
               </a>
-              <a href="tel:+919876543210" className="flex items-start gap-3 hover:opacity-100 transition-opacity">
+              <a href="tel:+917082130463" className="flex items-start gap-3 hover:opacity-100 transition-opacity">
                 <Phone className="h-5 w-5 mt-0.5 opacity-80" />
-                <span className="text-sm opacity-80">+91 98765 43210</span>
+                <span className="text-sm opacity-80">+91 70821 30463</span>
               </a>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-0.5 opacity-80" />

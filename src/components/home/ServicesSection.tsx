@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, FileCheck, Globe2, TestTube, Shield, Zap, Radio } from "lucide-react";
+import { ArrowRight, Shield, Globe2, TestTube, CheckCircle } from "lucide-react";
 
 const indianServices = [
   { name: "BIS-CRS", description: "Compulsory Registration Scheme" },
@@ -32,28 +32,37 @@ const serviceCategories = [
     title: "Indian Regulatory Approvals",
     description: "Meet mandatory Indian regulatory requirements for legal sale, import, tenders, and government procurement.",
     services: indianServices,
-    color: "bg-primary",
+    color: "from-primary to-primary/80",
+    iconBg: "bg-primary",
   },
   {
     icon: Globe2,
     title: "Global Certifications & Market Access",
     description: "Access international markets with globally recognized certifications and compliance marks.",
     services: globalServices,
-    color: "bg-secondary",
+    color: "from-secondary to-secondary/80",
+    iconBg: "bg-secondary",
   },
   {
     icon: TestTube,
     title: "Testing Services",
     description: "Comprehensive product testing including pre-compliance and customized testing solutions.",
     services: testingServices,
-    color: "bg-accent",
+    color: "from-accent to-accent/80",
+    iconBg: "bg-accent",
   },
 ];
 
 export const ServicesSection = () => {
   return (
-    <section className="py-20 lg:py-28 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section className="py-20 lg:py-28 bg-muted/30 relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_30%,hsl(var(--primary)/0.1)_0%,transparent_50%)]" />
+        <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_80%_70%,hsl(var(--accent)/0.1)_0%,transparent_50%)]" />
+      </div>
+
+      <div className="container mx-auto px-4 relative">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent mb-6">
@@ -63,26 +72,26 @@ export const ServicesSection = () => {
             Comprehensive Certification & Testing Solutions
           </h2>
           <p className="text-muted-foreground text-lg">
-            From regulatory approvals to product testing, we provide end-to-end compliance services for your products.
+            From regulatory approvals to product testing, we provide end-to-end compliance services to help you enter markets confidently.
           </p>
         </div>
 
         {/* Service Categories */}
         <div className="grid lg:grid-cols-3 gap-8">
-          {serviceCategories.map((category, index) => (
+          {serviceCategories.map((category) => (
             <div
               key={category.title}
-              className="bg-card rounded-2xl shadow-card border border-border/50 overflow-hidden hover:shadow-elevated transition-all duration-300 group"
+              className="group bg-card rounded-2xl shadow-card border border-border/50 overflow-hidden hover:shadow-elevated transition-all duration-300 hover:-translate-y-1"
             >
               {/* Header */}
-              <div className={`${category.color} p-6`}>
-                <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center mb-4">
+              <div className={`bg-gradient-to-r ${category.color} p-6`}>
+                <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <category.icon className="h-7 w-7 text-white" />
                 </div>
                 <h3 className="font-heading text-xl font-bold text-white mb-2">
                   {category.title}
                 </h3>
-                <p className="text-white/80 text-sm">
+                <p className="text-white/85 text-sm leading-relaxed">
                   {category.description}
                 </p>
               </div>
@@ -91,11 +100,11 @@ export const ServicesSection = () => {
               <div className="p-6">
                 <ul className="space-y-3">
                   {category.services.map((service) => (
-                    <li key={service.name} className="flex items-start gap-3">
-                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                    <li key={service.name} className="flex items-start gap-3 group/item">
+                      <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                       <div>
-                        <span className="font-medium text-foreground">{service.name}</span>
-                        <span className="text-muted-foreground text-sm ml-1">— {service.description}</span>
+                        <span className="font-medium text-foreground group-hover/item:text-primary transition-colors">{service.name}</span>
+                        <span className="text-muted-foreground text-sm block">{service.description}</span>
                       </div>
                     </li>
                   ))}
@@ -107,10 +116,10 @@ export const ServicesSection = () => {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <Button asChild size="lg">
+          <Button asChild size="lg" className="group">
             <Link to="/services">
               View All Services
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
         </div>

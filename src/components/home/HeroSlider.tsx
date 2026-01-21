@@ -54,9 +54,21 @@ export const HeroSlider = () => {
     return () => clearInterval(interval);
   }, [isAutoPlaying, nextSlide]);
 
-  const handleManualNavigation = (action: () => void) => {
+  const goToSlide = (index: number) => {
     setIsAutoPlaying(false);
-    action();
+    setCurrentSlide(index);
+    setTimeout(() => setIsAutoPlaying(true), 10000);
+  };
+
+  const handlePrev = () => {
+    setIsAutoPlaying(false);
+    prevSlide();
+    setTimeout(() => setIsAutoPlaying(true), 10000);
+  };
+
+  const handleNext = () => {
+    setIsAutoPlaying(false);
+    nextSlide();
     setTimeout(() => setIsAutoPlaying(true), 10000);
   };
 
@@ -149,11 +161,11 @@ export const HeroSlider = () => {
         {/* Slide Navigation */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-4">
           <button
-            onClick={() => handleManualNavigation(prevSlide)}
-            className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground transition-colors"
+            onClick={handlePrev}
+            className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/30 text-primary-foreground transition-all duration-200 hover:scale-110"
             aria-label="Previous slide"
           >
-            <ChevronLeft className="h-5 w-5" />
+            <ChevronLeft className="h-6 w-6" />
           </button>
 
           {/* Dots */}
@@ -161,9 +173,7 @@ export const HeroSlider = () => {
             {slides.map((_, index) => (
               <button
                 key={index}
-                onClick={() => {
-                  handleManualNavigation(() => setCurrentSlide(index));
-                }}
+                onClick={() => goToSlide(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   index === currentSlide
                     ? "w-8 bg-primary-foreground"
@@ -175,11 +185,11 @@ export const HeroSlider = () => {
           </div>
 
           <button
-            onClick={() => handleManualNavigation(nextSlide)}
-            className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground transition-colors"
+            onClick={handleNext}
+            className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/30 text-primary-foreground transition-all duration-200 hover:scale-110"
             aria-label="Next slide"
           >
-            <ChevronRight className="h-5 w-5" />
+            <ChevronRight className="h-6 w-6" />
           </button>
         </div>
       </div>
