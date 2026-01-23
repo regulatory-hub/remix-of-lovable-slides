@@ -19,45 +19,45 @@ const stats = [
 
 export const WhyChooseSection = () => {
   return (
-    <section className="py-16 lg:py-20 bg-muted/30">
+    <section className="py-12 md:py-16 lg:py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="mb-10">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
+        <div className="mb-6 md:mb-10">
+          <h2 className="font-heading text-xl sm:text-2xl md:text-3xl font-bold text-foreground">
             Why Clients Choose QnS
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
           {/* Reasons List */}
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             {reasons.map((reason) => (
-              <div key={reason} className="flex items-center gap-3">
-                <CheckSquare className="h-5 w-5 text-accent shrink-0" />
-                <span className="text-foreground font-medium">{reason}</span>
+              <div key={reason} className="flex items-center gap-2 md:gap-3">
+                <CheckSquare className="h-4 w-4 md:h-5 md:w-5 text-accent shrink-0" />
+                <span className="text-foreground font-medium text-sm md:text-base">{reason}</span>
               </div>
             ))}
 
-            <div className="pt-6">
-              <Button asChild size="lg" className="group">
+            <div className="pt-4 md:pt-6">
+              <Button asChild size="default" className="group w-full sm:w-auto">
                 <Link to="/contact">
                   Get Started
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
             </div>
           </div>
 
           {/* Stats Grid */}
-          <div className="flex flex-wrap items-stretch">
+          <div className="grid grid-cols-2 gap-4 md:flex md:flex-wrap md:items-stretch">
             {stats.map((stat, index) => (
               <div
                 key={stat.label}
-                className={`flex-1 min-w-[120px] p-6 text-center ${
-                  index < stats.length - 1 ? "border-r border-border" : ""
+                className={`flex-1 min-w-[100px] md:min-w-[120px] p-4 md:p-6 text-center bg-card rounded-lg md:bg-transparent md:rounded-none ${
+                  index < stats.length - 1 ? "md:border-r md:border-border" : ""
                 }`}
               >
-                <div className="font-heading text-3xl font-bold text-accent mb-1">
+                <div className="font-heading text-2xl md:text-3xl font-bold text-accent mb-1">
                   {stat.value}
                 </div>
                 <div className="text-xs text-muted-foreground leading-tight">
