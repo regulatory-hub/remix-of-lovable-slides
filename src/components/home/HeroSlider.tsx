@@ -10,27 +10,27 @@ const slides = [
   {
     id: 1,
     image: heroLabTesting,
-    headline: "Regulatory Compliance & Certification",
-    subline: "Made Quick and Simplified",
-    description: "We help manufacturers and brands navigate global testing and certification requirements — efficiently, accurately, and transparently.",
+    headline: "Quick and Simplified",
+    subline: "Regulatory Compliance",
+    description: "We help manufacturers and importers navigate complex testing and certification requirements — efficiently, accurately, and transparently.",
   },
   {
     id: 2,
     image: heroGlobalCompliance,
-    headline: "Global Market Access",
-    subline: "Made Simple",
-    description: "Navigate complex international regulations with our expert guidance. CE, FCC, BIS, UKCA - we handle it all.",
+    headline: "India & Global",
+    subline: "Market Access",
+    description: "BIS-CRS, ISI, WPC ETA, TEC/MTCTE for India. CE, CB, FCC, UKCA for international markets. One partner for all your compliance needs.",
   },
   {
     id: 3,
     image: heroCertification,
     headline: "From Pre-Compliance",
     subline: "To Market Launch",
-    description: "End-to-end support for your product certification journey. Single-window coordination for all your compliance needs.",
+    description: "End-to-end support from early design stages through final certification, market launch, and ongoing regulatory maintenance.",
   },
 ];
 
-const certifications = ["BIS", "IEC", "ISO", "CE", "EMC", "Safety"];
+const certifications = ["BIS-CRS", "ISI", "WPC", "TEC", "CE", "CB"];
 
 export const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -95,6 +95,11 @@ export const HeroSlider = () => {
       {/* Content */}
       <div className="relative container mx-auto px-4 py-16 md:py-24 lg:py-32 min-h-[70vh] md:min-h-[80vh] lg:min-h-[85vh] flex items-center">
         <div className="max-w-full md:max-w-2xl">
+          {/* Company Name Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 text-accent mb-4 animate-fade-in">
+            <span className="text-xs md:text-sm font-semibold">QnS Testing Lab</span>
+          </div>
+
           {/* Headline */}
           <h1
             key={`headline-${currentSlide}`}
@@ -137,7 +142,7 @@ export const HeroSlider = () => {
             </Button>
             <Button asChild variant="heroOutline" size="lg" className="text-sm md:text-base">
               <Link to="/services">
-                Speak to Expert
+                View All Services
                 <ArrowRight className="h-4 w-4 md:h-5 md:w-5" />
               </Link>
             </Button>
