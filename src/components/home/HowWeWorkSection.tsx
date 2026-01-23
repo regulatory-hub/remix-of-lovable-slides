@@ -18,33 +18,33 @@ const steps = [
 
 export const HowWeWorkSection = () => {
   return (
-    <section className="py-16 lg:py-20 bg-background">
+    <section className="py-12 md:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="mb-10">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
+        <div className="mb-6 md:mb-10">
+          <h2 className="font-heading text-xl sm:text-2xl md:text-3xl font-bold text-foreground">
             Our Compliance Approach
           </h2>
         </div>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
           {steps.map((step, index) => (
             <div
               key={step.number}
-              className="relative p-6 bg-muted/50 rounded-lg border border-border"
+              className="relative p-4 md:p-6 bg-muted/50 rounded-lg border border-border"
             >
               {/* Number Badge */}
-              <div className="flex items-center gap-4 mb-4">
-                <span className="font-heading text-2xl font-bold text-accent">
+              <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
+                <span className="font-heading text-xl md:text-2xl font-bold text-accent">
                   {step.number}
                 </span>
-                <h3 className="font-heading text-lg font-semibold text-foreground">
+                <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">
                   {step.title}
                 </h3>
               </div>
               
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
                 {step.description}
               </p>
 

@@ -13,36 +13,36 @@ const frameworks = [
 
 export const IndustriesSection = () => {
   return (
-    <section className="py-16 lg:py-20 bg-muted/40 relative overflow-hidden">
-      {/* Background Decoration */}
-      <div className="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+    <section className="py-12 md:py-16 lg:py-20 bg-muted/40 relative overflow-hidden">
+      {/* Background Decoration - Hidden on mobile */}
+      <div className="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none hidden md:block">
         <div className="absolute top-10 right-10 w-64 h-64 border border-primary/30 rounded-lg transform rotate-12" />
         <div className="absolute top-20 right-20 w-48 h-48 border border-primary/20 rounded-lg transform -rotate-6" />
       </div>
 
       <div className="container mx-auto px-4 relative">
         {/* Header */}
-        <div className="mb-10">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
+        <div className="mb-6 md:mb-10">
+          <h2 className="font-heading text-xl sm:text-2xl md:text-3xl font-bold text-foreground">
             Regulatory Frameworks We Manage
           </h2>
         </div>
 
         {/* Frameworks Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-4">
           {frameworks.map((framework) => (
             <div
               key={framework.label}
-              className="group flex items-center gap-3 p-4 bg-card rounded-lg border border-border hover:border-accent/30 hover:shadow-soft transition-all duration-300"
+              className="group flex items-center gap-2 md:gap-3 p-3 md:p-4 bg-card rounded-lg border border-border hover:border-accent/30 hover:shadow-soft transition-all duration-300"
             >
-              <div className="w-10 h-10 shrink-0 rounded-lg bg-primary/5 flex items-center justify-center group-hover:bg-accent/10 transition-colors">
+              <div className="w-8 h-8 md:w-10 md:h-10 shrink-0 rounded-lg bg-primary/5 flex items-center justify-center group-hover:bg-accent/10 transition-colors">
                 {framework.customIcon ? (
-                  <span className="font-heading font-bold text-primary text-sm">{framework.customIcon}</span>
+                  <span className="font-heading font-bold text-primary text-xs md:text-sm">{framework.customIcon}</span>
                 ) : framework.icon ? (
-                  <framework.icon className="h-5 w-5 text-primary" />
+                  <framework.icon className="h-4 w-4 md:h-5 md:w-5 text-primary" />
                 ) : null}
               </div>
-              <span className="font-medium text-foreground text-sm">
+              <span className="font-medium text-foreground text-xs md:text-sm">
                 {framework.label}
               </span>
             </div>
