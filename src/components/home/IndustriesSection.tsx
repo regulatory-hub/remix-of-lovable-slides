@@ -1,122 +1,52 @@
-import { 
-  Plug, 
-  Monitor, 
-  Wifi, 
-  Lightbulb, 
-  Smartphone, 
-  Factory, 
-  Package 
-} from "lucide-react";
-import industriesProducts from "@/assets/industries-products.jpg";
+import { Shield, FileCheck, Zap, Radio, Activity, Leaf, Award } from "lucide-react";
 
-const industries = [
-  {
-    icon: Plug,
-    title: "Electrical & Electronic Products",
-    description: "Switches, wires, appliances, and electrical equipment",
-  },
-  {
-    icon: Monitor,
-    title: "IT & AV Equipment",
-    description: "Computers, displays, audio-visual systems",
-  },
-  {
-    icon: Wifi,
-    title: "Telecom & Networking",
-    description: "Routers, modems, and communication devices",
-  },
-  {
-    icon: Lightbulb,
-    title: "Lighting & LED Products",
-    description: "LED lamps, luminaires, and lighting controls",
-  },
-  {
-    icon: Smartphone,
-    title: "Consumer & Lifestyle",
-    description: "Home appliances and consumer electronics",
-  },
-  {
-    icon: Factory,
-    title: "Industrial & Laboratory",
-    description: "Industrial equipment and lab instruments",
-  },
-  {
-    icon: Package,
-    title: "Importers, OEMs & Brand Owners",
-    description: "Support for importers and brand compliance",
-  },
+const frameworks = [
+  { icon: Shield, label: "BIS (India)" },
+  { icon: FileCheck, label: "IEC Standards" },
+  { icon: null, label: "CE Marking", customIcon: "CE" },
+  { icon: Radio, label: "EMC Compliance" },
+  { icon: Zap, label: "Electrical Safety" },
+  { icon: Activity, label: "Energy Efficiency" },
+  { icon: Leaf, label: "Environmental Compliance" },
+  { icon: Award, label: "Quality Standards" },
 ];
 
 export const IndustriesSection = () => {
   return (
-    <section className="py-20 lg:py-28 bg-background overflow-hidden relative">
+    <section className="py-16 lg:py-20 bg-muted/40 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+        <div className="absolute top-10 right-10 w-64 h-64 border border-primary/30 rounded-lg transform rotate-12" />
+        <div className="absolute top-20 right-20 w-48 h-48 border border-primary/20 rounded-lg transform -rotate-6" />
       </div>
 
       <div className="container mx-auto px-4 relative">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Content Side */}
-          <div>
-            {/* Header */}
-            <div className="mb-10">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent mb-6">
-                <span className="text-sm font-semibold">Industries We Serve</span>
+        {/* Header */}
+        <div className="mb-10">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
+            Regulatory Frameworks We Manage
+          </h2>
+        </div>
+
+        {/* Frameworks Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {frameworks.map((framework) => (
+            <div
+              key={framework.label}
+              className="group flex items-center gap-3 p-4 bg-card rounded-lg border border-border hover:border-accent/30 hover:shadow-soft transition-all duration-300"
+            >
+              <div className="w-10 h-10 shrink-0 rounded-lg bg-primary/5 flex items-center justify-center group-hover:bg-accent/10 transition-colors">
+                {framework.customIcon ? (
+                  <span className="font-heading font-bold text-primary text-sm">{framework.customIcon}</span>
+                ) : framework.icon ? (
+                  <framework.icon className="h-5 w-5 text-primary" />
+                ) : null}
               </div>
-              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-                Expertise Across <span className="text-gradient">Multiple Sectors</span>
-              </h2>
-              <p className="text-muted-foreground text-lg">
-                We support a wide range of industries where regulatory compliance is essential for market entry and success.
-              </p>
+              <span className="font-medium text-foreground text-sm">
+                {framework.label}
+              </span>
             </div>
-
-            {/* Industries List */}
-            <div className="space-y-3">
-              {industries.map((industry) => (
-                <div
-                  key={industry.title}
-                  className="group flex items-center gap-4 p-4 bg-card rounded-xl border border-border/50 shadow-soft hover:shadow-card hover:border-primary/30 transition-all duration-300 hover:-translate-x-1"
-                >
-                  <div className="w-12 h-12 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
-                    <industry.icon className="h-6 w-6 text-primary group-hover:text-primary-foreground transition-colors" />
-                  </div>
-                  <div>
-                    <h3 className="font-heading text-base font-semibold text-foreground group-hover:text-primary transition-colors">
-                      {industry.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      {industry.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Image Side */}
-          <div className="relative order-first lg:order-last">
-            <div className="relative rounded-2xl overflow-hidden shadow-elevated">
-              <img
-                src={industriesProducts}
-                alt="Various electronic and electrical products we certify"
-                className="w-full h-auto object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
-            </div>
-            
-            {/* Floating Badge */}
-            <div className="absolute -bottom-4 -left-4 lg:-left-6 bg-primary text-primary-foreground rounded-xl shadow-elevated p-5">
-              <div className="text-3xl font-heading font-bold">7+</div>
-              <div className="text-sm opacity-90">Industry Sectors</div>
-            </div>
-            
-            {/* Decorative elements */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-accent/10 rounded-full -z-10" />
-            <div className="absolute bottom-1/4 -right-8 w-24 h-24 bg-secondary/10 rounded-xl -z-10" />
-          </div>
+          ))}
         </div>
       </div>
     </section>
