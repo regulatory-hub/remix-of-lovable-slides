@@ -2,21 +2,21 @@ import { Phone, Mail, MapPin, Facebook, Linkedin, Twitter, Instagram } from "luc
 
 export const TopBar = () => {
   return (
-    <div className="bg-primary text-primary-foreground py-2 hidden md:block">
+    <div className="bg-primary text-primary-foreground py-2.5 hidden md:block">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between text-sm">
           {/* Contact Info */}
           <div className="flex items-center gap-6">
             <a 
               href="tel:+917082130463" 
-              className="flex items-center gap-2 hover:text-secondary transition-colors"
+              className="flex items-center gap-2 hover:text-accent transition-colors"
             >
               <Phone className="h-3.5 w-3.5" />
               <span>+91 70821 30463</span>
             </a>
             <a 
               href="mailto:info@qnstestinglab.com" 
-              className="flex items-center gap-2 hover:text-secondary transition-colors"
+              className="flex items-center gap-2 hover:text-accent transition-colors"
             >
               <Mail className="h-3.5 w-3.5" />
               <span>info@qnstestinglab.com</span>
@@ -34,7 +34,7 @@ export const TopBar = () => {
               href="https://facebook.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-secondary transition-colors"
+              className="hover:text-accent transition-colors"
               aria-label="Facebook"
             >
               <Facebook className="h-4 w-4" />
@@ -43,7 +43,7 @@ export const TopBar = () => {
               href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-secondary transition-colors"
+              className="hover:text-accent transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-4 w-4" />
@@ -52,7 +52,7 @@ export const TopBar = () => {
               href="https://twitter.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-secondary transition-colors"
+              className="hover:text-accent transition-colors"
               aria-label="Twitter"
             >
               <Twitter className="h-4 w-4" />
@@ -61,7 +61,7 @@ export const TopBar = () => {
               href="https://instagram.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-secondary transition-colors"
+              className="hover:text-accent transition-colors"
               aria-label="Instagram"
             >
               <Instagram className="h-4 w-4" />
