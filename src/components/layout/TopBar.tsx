@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Phone, Mail, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
 
 export const TopBar = () => {
   return (
@@ -15,16 +15,12 @@ export const TopBar = () => {
               <span>+91 70821 30463</span>
             </a>
             <a 
-              href="mailto:info@qnstestinglab.com" 
+              href="mailto:compliance@qnstl.com" 
               className="flex items-center gap-2 hover:text-accent transition-colors"
             >
               <Mail className="h-3.5 w-3.5" />
-              <span>info@qnstestinglab.com</span>
+              <span>compliance@qnstl.com</span>
             </a>
-            <div className="flex items-center gap-2 text-primary-foreground/80">
-              <MapPin className="h-3.5 w-3.5" />
-              <span>Delhi NCR, India</span>
-            </div>
           </div>
 
           {/* Social Icons */}

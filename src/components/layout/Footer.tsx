@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Mail, Phone, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
 
 const quickLinks = [
   { name: "Home", href: "/" },
@@ -15,7 +15,8 @@ const services = [
   { name: "WPC ETA Certification", href: "/services/wpc-eta" },
   { name: "TEC / MTCTE", href: "/services/tec-mtcte" },
   { name: "EPR Certification", href: "/services/epr" },
-  { name: "CE & CB Certification", href: "/services/ce-cb" },
+  { name: "CE Marking", href: "/services/ce-marking" },
+  { name: "CB Certification", href: "/services/cb-scheme" },
 ];
 
 export const Footer = () => {
@@ -111,18 +112,14 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-heading text-lg font-semibold">Contact Us</h4>
             <div className="space-y-3">
-              <a href="mailto:info@qnstestinglab.com" className="flex items-start gap-3 hover:opacity-100 transition-opacity">
+              <a href="mailto:compliance@qnstl.com" className="flex items-start gap-3 hover:opacity-100 transition-opacity">
                 <Mail className="h-5 w-5 mt-0.5 opacity-80" />
-                <span className="text-sm opacity-80">info@qnstestinglab.com</span>
+                <span className="text-sm opacity-80">compliance@qnstl.com</span>
               </a>
               <a href="tel:+917082130463" className="flex items-start gap-3 hover:opacity-100 transition-opacity">
                 <Phone className="h-5 w-5 mt-0.5 opacity-80" />
                 <span className="text-sm opacity-80">+91 70821 30463</span>
               </a>
-              <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 mt-0.5 opacity-80" />
-                <span className="text-sm opacity-80">Delhi NCR, India</span>
-              </div>
             </div>
           </div>
         </div>

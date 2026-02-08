@@ -16,7 +16,8 @@ import IsiCertification from "./pages/services/IsiCertification";
 import WpcEta from "./pages/services/WpcEta";
 import TecMtcte from "./pages/services/TecMtcte";
 import EprCertification from "./pages/services/EprCertification";
-import CeCbCertification from "./pages/services/CeCbCertification";
+import CeMarking from "./pages/services/CeMarking";
+import CbCertification from "./pages/services/CbCertification";
 
 const queryClient = new QueryClient();
 
@@ -35,7 +36,8 @@ const App = () => (
           <Route path="/services/wpc-eta" element={<WpcEta />} />
           <Route path="/services/tec-mtcte" element={<TecMtcte />} />
           <Route path="/services/epr" element={<EprCertification />} />
-          <Route path="/services/ce-cb" element={<CeCbCertification />} />
+          <Route path="/services/ce-marking" element={<CeMarking />} />
+          <Route path="/services/cb-scheme" element={<CbCertification />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/how-we-work" element={<HowWeWork />} />
           <Route path="/why-choose-us" element={<WhyChooseUs />} />

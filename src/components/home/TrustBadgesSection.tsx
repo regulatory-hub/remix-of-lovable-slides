@@ -4,7 +4,7 @@ import { Award, Building2, Globe, FileCheck, Shield } from "lucide-react";
 const badges = [
   { icon: FileCheck, label: "BIS-CRS Experts", href: "/services/bis-crs" },
   { icon: Shield, label: "ISI Certification", href: "/services/isi" },
-  { icon: Globe, label: "CE & CB Certified", href: "/services/ce-cb" },
+  { icon: Globe, label: "CE Marking", href: "/services/ce-marking" },
   { icon: Award, label: "WPC ETA Approved", href: "/services/wpc-eta" },
   { icon: Building2, label: "TEC/MTCTE Support", href: "/services/tec-mtcte" },
 ];

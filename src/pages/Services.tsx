@@ -9,7 +9,8 @@ const services = [
   { id: "wpc-eta", icon: Radio, title: "WPC ETA Certification", description: "Equipment Type Approval for wireless & RF devices.", href: "/services/wpc-eta" },
   { id: "tec-mtcte", icon: Globe2, title: "TEC / MTCTE Certification", description: "Mandatory testing for telecom equipment in India.", href: "/services/tec-mtcte" },
   { id: "epr", icon: Leaf, title: "EPR Certification", description: "Extended Producer Responsibility for e-waste & plastic waste.", href: "/services/epr" },
-  { id: "ce", icon: Zap, title: "CE & CB Certification", description: "CE marking for EU and CB Scheme for global market access.", href: "/services/ce-cb" },
+  { id: "ce", icon: Zap, title: "CE Marking", description: "CE marking for product entry into EU/EEA markets.", href: "/services/ce-marking" },
+  { id: "cb", icon: Globe2, title: "CB Certification", description: "IECEE CB Scheme for global multi-country acceptance.", href: "/services/cb-scheme" },
 ];
 
 const testingServices = [
