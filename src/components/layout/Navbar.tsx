@@ -10,7 +10,8 @@ const serviceSubItems = [
   { name: "WPC ETA Certification", href: "/services/wpc-eta" },
   { name: "TEC / MTCTE Certification", href: "/services/tec-mtcte" },
   { name: "EPR Certification", href: "/services/epr" },
-  { name: "CE & CB Certification", href: "/services/ce-cb" },
+  { name: "CE Marking", href: "/services/ce-marking" },
+  { name: "CB Certification", href: "/services/cb-scheme" },
 ];
 
 const navItems = [

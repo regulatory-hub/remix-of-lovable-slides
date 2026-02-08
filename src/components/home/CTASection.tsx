@@ -29,7 +29,7 @@ export const CTASection = () => {
               </a>
             </Button>
             <Button asChild variant="heroOutline" size="lg" className="text-sm md:text-base">
-              <a href="mailto:info@qnstestinglab.com">
+              <a href="mailto:compliance@qnstl.com">
                 <Mail className="h-4 w-4 md:h-5 md:w-5" />
                 Email Us
               </a>
@@ -41,9 +41,9 @@ export const CTASection = () => {
               <Phone className="h-4 w-4" />
               <span>+91 70821 30463</span>
             </a>
-            <a href="mailto:info@qnstestinglab.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="mailto:compliance@qnstl.com" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Mail className="h-4 w-4" />
-              <span>info@qnstestinglab.com</span>
+              <span>compliance@qnstl.com</span>
             </a>
           </div>
         </div>
