@@ -136,9 +136,9 @@ export const HeroSlider = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-delay-3">
             <Button asChild variant="accent" size="lg" className="text-sm md:text-base">
-              <Link to="/contact">
+              <a href="https://wa.me/917082130463" target="_blank" rel="noopener noreferrer">
                 Request Consultation
-              </Link>
+              </a>
             </Button>
             <Button asChild variant="heroOutline" size="lg" className="text-sm md:text-base">
               <Link to="/services">

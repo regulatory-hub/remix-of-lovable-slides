@@ -2,11 +2,8 @@ import { Layout } from "@/components/layout/Layout";
 import { HeroSlider } from "@/components/home/HeroSlider";
 import { TrustBadgesSection } from "@/components/home/TrustBadgesSection";
 import { AboutSection } from "@/components/home/AboutSection";
-import { ServicesSection } from "@/components/home/ServicesSection";
-import { IndustriesSection } from "@/components/home/IndustriesSection";
-import { HowWeWorkSection } from "@/components/home/HowWeWorkSection";
 import { WhyChooseSection } from "@/components/home/WhyChooseSection";
-import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { CertificationLogosMarquee } from "@/components/home/CertificationLogosMarquee";
 import { CTASection } from "@/components/home/CTASection";
 
 const Index = () => {
@@ -15,11 +12,8 @@ const Index = () => {
       <HeroSlider />
       <TrustBadgesSection />
       <AboutSection />
-      <ServicesSection />
-      <IndustriesSection />
-      <HowWeWorkSection />
       <WhyChooseSection />
-      <TestimonialsSection />
+      <CertificationLogosMarquee />
       <CTASection />
     </Layout>
   );
