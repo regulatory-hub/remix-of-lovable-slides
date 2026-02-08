@@ -10,13 +10,12 @@ const quickLinks = [
 ];
 
 const services = [
-  { name: "BIS-CRS Certification", href: "/services#bis-crs" },
-  { name: "ISI Certification", href: "/services#isi" },
-  { name: "CE Marking", href: "/services#ce" },
-  { name: "WPC ETA Certification", href: "/services#wpc-eta" },
-  { name: "TEC / MTCTE", href: "/services#tec-mtcte" },
-  { name: "CB Certification", href: "/services#cb" },
-  { name: "EPR Certification", href: "/services#epr" },
+  { name: "BIS-CRS Certification", href: "/services/bis-crs" },
+  { name: "ISI Certification", href: "/services/isi" },
+  { name: "WPC ETA Certification", href: "/services/wpc-eta" },
+  { name: "TEC / MTCTE", href: "/services/tec-mtcte" },
+  { name: "EPR Certification", href: "/services/epr" },
+  { name: "CE & CB Certification", href: "/services/ce-cb" },
 ];
 
 export const Footer = () => {
