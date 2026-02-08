@@ -5,16 +5,12 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const serviceSubItems = [
-  { name: "Indian Regulatory Approvals", href: "/services#indian-regulatory" },
-  { name: "BIS-CRS Certification", href: "/services#bis-crs" },
-  { name: "ISI Certification", href: "/services#isi" },
-  { name: "WPC ETA Certification", href: "/services#wpc-eta" },
-  { name: "TEC / MTCTE Certification", href: "/services#tec-mtcte" },
-  { name: "EPR Certification", href: "/services#epr" },
-  { name: "Global Certifications", href: "/services#global" },
-  { name: "CE Marking", href: "/services#ce" },
-  { name: "CB Certification", href: "/services#cb" },
-  { name: "Testing Services", href: "/services#testing" },
+  { name: "BIS-CRS Certification", href: "/services/bis-crs" },
+  { name: "ISI Certification", href: "/services/isi" },
+  { name: "WPC ETA Certification", href: "/services/wpc-eta" },
+  { name: "TEC / MTCTE Certification", href: "/services/tec-mtcte" },
+  { name: "EPR Certification", href: "/services/epr" },
+  { name: "CE & CB Certification", href: "/services/ce-cb" },
 ];
 
 const navItems = [
