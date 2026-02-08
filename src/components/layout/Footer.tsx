@@ -3,11 +3,9 @@ import { Mail, Phone, MapPin, Facebook, Linkedin, Twitter, Instagram } from "luc
 
 const quickLinks = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "Industries", href: "/industries" },
   { name: "How We Work", href: "/how-we-work" },
-  { name: "Why Choose Us", href: "/why-choose-us" },
   { name: "Contact", href: "/contact" },
 ];
 

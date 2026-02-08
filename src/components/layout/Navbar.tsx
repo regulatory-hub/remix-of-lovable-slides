@@ -19,11 +19,9 @@ const serviceSubItems = [
 
 const navItems = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
   { name: "Services", href: "/services", hasDropdown: true, subItems: serviceSubItems },
   { name: "Industries", href: "/industries" },
   { name: "How We Work", href: "/how-we-work" },
-  { name: "Why Choose Us", href: "/why-choose-us" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -128,7 +126,7 @@ export const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button asChild variant="default" size="lg">
-              <Link to="/contact">Get Consultation</Link>
+              <a href="https://wa.me/917082130463" target="_blank" rel="noopener noreferrer">Get Consultation</a>
             </Button>
           </div>
 
@@ -198,9 +196,9 @@ export const Navbar = () => {
               ))}
               <div className="pt-4 px-4">
                 <Button asChild variant="default" className="w-full">
-                  <Link to="/contact" onClick={() => setIsOpen(false)}>
+                  <a href="https://wa.me/917082130463" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
                     Get Consultation
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>

@@ -43,7 +43,7 @@ export const AboutSection = () => {
             </div>
             
             <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-              <span className="text-gradient">Quick and Simplified</span> — Our Philosophy
+              <span className="text-gradient">QnS</span> — Our Philosophy
             </h2>
 
             <div className="space-y-4 text-muted-foreground text-sm md:text-base leading-relaxed">
