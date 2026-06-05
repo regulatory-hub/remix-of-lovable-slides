@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, User, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
 
 const quickLinks = [
   { name: "Home", href: "/" },
