@@ -6,7 +6,7 @@ const WpcEta = () => (
     icon={Radio}
     title="WPC ETA Certification"
     tagline="Equipment Type Approval for wireless & radio frequency devices"
-    description="WPC ETA is mandatory for any wireless product operating in India. QnS handles RF testing, SAR testing, and the complete WPC application process for Wi-Fi, Bluetooth, IoT and cellular devices."
+    description="WPC ETA is mandatory for any wireless product operating in India. BISCRS handles RF testing, SAR testing, and the complete WPC application process for Wi-Fi, Bluetooth, IoT and cellular devices."
     keyPoints={[
       "Required for all RF/wireless products",
       "RF & SAR testing coordination",

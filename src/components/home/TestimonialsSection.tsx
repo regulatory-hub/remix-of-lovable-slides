@@ -5,7 +5,7 @@ const testimonials = [
     name: "Rajesh Kumar",
     company: "ElectroTech Industries",
     role: "Quality Manager",
-    content: "QnS Testing Lab helped us get BIS certification in record time. Their expertise and guidance made the complex process simple.",
+    content: "BISCRS Consultant helped us get BIS certification in record time. Their expertise and guidance made the complex process simple.",
     rating: 5,
   },
   {

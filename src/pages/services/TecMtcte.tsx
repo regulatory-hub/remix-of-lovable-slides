@@ -6,7 +6,7 @@ const TecMtcte = () => (
     icon={Globe2}
     title="TEC / MTCTE Certification"
     tagline="Mandatory testing for telecom equipment connected to Indian networks"
-    description="TEC (Telecom Engineering Centre) certification under the MTCTE scheme is mandatory for telecom products in India. QnS manages product categorization, lab testing, and portal registration."
+    description="TEC (Telecom Engineering Centre) certification under the MTCTE scheme is mandatory for telecom products in India. BISCRS manages product categorization, lab testing, and portal registration."
     keyPoints={[
       "Mandatory for telecom equipment",
       "Product categorization support",

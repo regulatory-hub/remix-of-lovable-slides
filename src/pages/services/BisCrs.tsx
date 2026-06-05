@@ -6,7 +6,7 @@ const BisCrs = () => (
     icon={FileCheck}
     title="BIS-CRS Certification"
     tagline="Compulsory Registration for electronics & IT products sold in India"
-    description="BIS-CRS (Compulsory Registration Scheme) is mandatory for electronics and IT products before they can be sold in India. QnS handles the complete registration process — from lab testing to BIS portal submission and approval."
+    description="BIS-CRS (Compulsory Registration Scheme) is mandatory for electronics and IT products before they can be sold in India. BISCRS handles the complete registration process — from lab testing to BIS portal submission and approval."
     keyPoints={[
       "Mandatory for electronics & IT goods",
       "End-to-end BIS application management",

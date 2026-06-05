@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, User, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
 
 const quickLinks = [
   { name: "Home", href: "/" },
@@ -27,11 +27,11 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-1">
-              <span className="font-heading text-2xl font-bold">QnS</span>
-              <span className="font-heading text-lg font-medium opacity-80">Testing Lab</span>
+              <span className="font-heading text-2xl font-bold">BISCRS</span>
+              <span className="font-heading text-lg font-medium opacity-80">Consultant</span>
             </div>
             <p className="text-sm leading-relaxed opacity-80">
-              Quick & Simplified — Your trusted partner for testing, certification, and regulatory compliance. Helping manufacturers and importers navigate complex regulations with speed and clarity.
+              Regulatory Compliance Solutions — Your trusted partner for testing, certification, and regulatory compliance. Helping manufacturers and importers navigate complex regulations with speed and clarity.
             </p>
             {/* Social Icons */}
             <div className="flex items-center gap-4 pt-2">
@@ -112,14 +112,22 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-heading text-lg font-semibold">Contact Us</h4>
             <div className="space-y-3">
-              <a href="mailto:compliance@qnstl.com" className="flex items-start gap-3 hover:opacity-100 transition-opacity">
+              <a href="mailto:buscrs@consultant.com" className="flex items-start gap-3 hover:opacity-100 transition-opacity">
                 <Mail className="h-5 w-5 mt-0.5 opacity-80" />
-                <span className="text-sm opacity-80">compliance@qnstl.com</span>
+                <span className="text-sm opacity-80">buscrs@consultant.com</span>
               </a>
               <a href="tel:+917082130463" className="flex items-start gap-3 hover:opacity-100 transition-opacity">
                 <Phone className="h-5 w-5 mt-0.5 opacity-80" />
-                <span className="text-sm opacity-80">+91 70821 30463</span>
+                <span className="text-sm opacity-80">+91 7082130463</span>
               </a>
+              <div className="flex items-start gap-3">
+                <User className="h-5 w-5 mt-0.5 opacity-80" />
+                <span className="text-sm opacity-80">Manisha</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 mt-0.5 opacity-80" />
+                <span className="text-sm opacity-80">Office No. F1-907, Sector 16B, Greater Noida West, Uttar Pradesh, India</span>
+              </div>
             </div>
           </div>
         </div>
@@ -128,7 +136,7 @@ export const Footer = () => {
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm opacity-70">
-              © {new Date().getFullYear()} QnS Testing Lab. All rights reserved.
+              © {new Date().getFullYear()} BISCRS Consultant. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link to="/privacy" className="text-sm opacity-70 hover:opacity-100 transition-opacity">

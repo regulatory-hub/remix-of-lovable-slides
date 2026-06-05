@@ -49,8 +49,8 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="flex items-center gap-1">
-              <span className="font-heading text-2xl font-bold text-primary">QnS</span>
-              <span className="font-heading text-lg font-medium text-muted-foreground">Testing Lab</span>
+              <span className="font-heading text-2xl font-bold text-primary">BISCRS</span>
+              <span className="font-heading text-lg font-medium text-muted-foreground">Consultant</span>
             </div>
           </Link>
 
