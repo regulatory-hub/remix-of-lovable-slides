@@ -10,9 +10,9 @@ const slides = [
   {
     id: 1,
     image: heroLabTesting,
-    headline: "Regulatory Compliance Solutions",
-    subline: "Regulatory Compliance",
-    description: "We help manufacturers and importers navigate complex testing and certification requirements — efficiently, accurately, and transparently.",
+    headline: "BISCRS CONSULTANT",
+    subline: "Enabling Global Market Access",
+    description: "We believe compliance is more than obtaining certificates—it is about building confidence, reducing risk, and accelerating access to global markets. Our expertise helps businesses navigate regulatory challenges with certainty and efficiency.",
   },
   {
     id: 2,
