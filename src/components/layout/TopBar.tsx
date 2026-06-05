@@ -15,11 +15,11 @@ export const TopBar = () => {
               <span>+91 70821 30463</span>
             </a>
             <a 
-              href="mailto:compliance@qnstl.com" 
+              href="mailto:buscrs@consultant.com" 
               className="flex items-center gap-2 hover:text-accent transition-colors"
             >
               <Mail className="h-3.5 w-3.5" />
-              <span>compliance@qnstl.com</span>
+              <span>buscrs@consultant.com</span>
             </a>
           </div>
 

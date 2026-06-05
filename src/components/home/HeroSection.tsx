@@ -21,7 +21,7 @@ export const HeroSection = () => {
 
           {/* Headline */}
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
-            Quick & Simplified Testing, Certification & Regulatory Compliance
+            Regulatory Compliance Solutions Testing, Certification & Regulatory Compliance
           </h1>
 
           {/* Subheadline */}

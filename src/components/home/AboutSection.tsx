@@ -18,7 +18,7 @@ export const AboutSection = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <img
                 src={aboutTeam}
-                alt="QnS Testing Lab team working on electronic testing"
+                alt="BISCRS Consultant team working on electronic testing"
                 className="w-full h-auto object-cover aspect-square"
               />
               {/* Overlay gradient */}
@@ -39,19 +39,19 @@ export const AboutSection = () => {
           {/* Content Side */}
           <div className="space-y-5 md:space-y-6 order-1 lg:order-2">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent">
-              <span className="text-sm font-semibold">About QnS Testing Lab</span>
+              <span className="text-sm font-semibold">About BISCRS Consultant</span>
             </div>
             
             <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-              <span className="text-gradient">QnS</span> — Our Philosophy
+              <span className="text-gradient">BISCRS</span> — Our Philosophy
             </h2>
 
             <div className="space-y-4 text-muted-foreground text-sm md:text-base leading-relaxed">
               <p>
-                QnS stands for <strong className="text-foreground">Quick and Simplified</strong> — a philosophy that defines how we approach testing, certification, and regulatory compliance.
+                QnS stands for <strong className="text-foreground">Regulatory Compliance Solutions</strong> — a philosophy that defines how we approach testing, certification, and regulatory compliance.
               </p>
               <p>
-                In today's complex regulatory environment, manufacturers and importers often struggle with changing standards, unclear requirements, multiple authorities, and tight market timelines. <strong className="text-foreground">QnS Testing Lab was created to remove this complexity</strong> and provide a clear, structured, and reliable path to compliance.
+                In today's complex regulatory environment, manufacturers and importers often struggle with changing standards, unclear requirements, multiple authorities, and tight market timelines. <strong className="text-foreground">BISCRS Consultant was created to remove this complexity</strong> and provide a clear, structured, and reliable path to compliance.
               </p>
               <p>
                 Our team brings <strong className="text-foreground">10 to 15 years of hands-on experience</strong> managing global compliance applications, product testing, and certifications across <strong className="text-foreground">India, Europe, the USA, and other regulated markets</strong>. This experience allows us to anticipate challenges, avoid common mistakes, and deliver compliance solutions that are accurate, efficient, and practical.

@@ -10,7 +10,7 @@ const slides = [
   {
     id: 1,
     image: heroLabTesting,
-    headline: "Quick and Simplified",
+    headline: "Regulatory Compliance Solutions",
     subline: "Regulatory Compliance",
     description: "We help manufacturers and importers navigate complex testing and certification requirements — efficiently, accurately, and transparently.",
   },
@@ -97,7 +97,7 @@ export const HeroSlider = () => {
         <div className="max-w-full md:max-w-2xl">
           {/* Company Name Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 text-accent mb-4 animate-fade-in">
-            <span className="text-xs md:text-sm font-semibold">QnS Testing Lab</span>
+            <span className="text-xs md:text-sm font-semibold">BISCRS Consultant</span>
           </div>
 
           {/* Headline */}

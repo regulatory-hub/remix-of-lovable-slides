@@ -57,7 +57,7 @@ export const ServicesSection = () => {
             Regulatory Certifications & Testing Services
           </h2>
           <p className="text-muted-foreground text-sm md:text-base max-w-3xl">
-            QnS Testing Lab provides end-to-end testing, certification, and regulatory consulting services for electrical, electronic, wireless, and consumer products.
+            BISCRS Consultant provides end-to-end testing, certification, and regulatory consulting services for electrical, electronic, wireless, and consumer products.
           </p>
         </div>
 

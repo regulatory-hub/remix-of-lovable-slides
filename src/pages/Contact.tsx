@@ -47,7 +47,7 @@ const Contact = () => {
 
             {/* Email */}
             <a
-              href="mailto:compliance@qnstl.com"
+              href="mailto:buscrs@consultant.com"
               className="group flex flex-col items-center gap-4 p-8 bg-card rounded-xl border border-border hover:border-accent/30 hover:shadow-card transition-all text-center"
             >
               <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
@@ -57,7 +57,7 @@ const Contact = () => {
               <p className="text-muted-foreground text-sm">Send us a detailed inquiry</p>
               <div className="flex items-center gap-2 text-foreground font-medium">
                 <Mail className="h-4 w-4" />
-                compliance@qnstl.com
+                buscrs@consultant.com
               </div>
             </a>
           </div>

@@ -17,7 +17,7 @@ export const WhyChooseSection = () => {
             <span className="text-sm font-semibold">Why Choose Us</span>
           </div>
           <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
-            Why Clients Trust QnS Testing Lab
+            Why Clients Trust BISCRS Consultant
           </h2>
         </div>
 
