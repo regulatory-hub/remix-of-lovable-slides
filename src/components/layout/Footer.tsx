@@ -131,11 +131,11 @@ export const Footer = () => {
               © {new Date().getFullYear()} QnS Testing Lab. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link to="/terms" className="text-sm opacity-70 hover:opacity-100 transition-opacity">
-                Terms of Service
-              </Link>
               <Link to="/privacy" className="text-sm opacity-70 hover:opacity-100 transition-opacity">
                 Privacy Policy
+              </Link>
+              <Link to="/terms" className="text-sm opacity-70 hover:opacity-100 transition-opacity">
+                Terms of Service
               </Link>
             </div>
           </div>
