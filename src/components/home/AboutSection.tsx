@@ -43,7 +43,7 @@ export const AboutSection = () => {
             </div>
             
             <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-              <span className="text-gradient">BISCRS</span> — Our Philosophy
+              <span className="text-gradient">BISCRS CONSULTANT</span> — Our Philosophy
             </h2>
 
             <div className="space-y-4 text-muted-foreground text-sm md:text-base leading-relaxed">
@@ -51,7 +51,7 @@ export const AboutSection = () => {
                 <strong className="text-foreground">We Business Unit for Safety Certification and Regulatory Solutions (BUSCRS) of BISCRS Consultant</strong> help manufacturers, importers, and brands navigate regulatory compliance requirements efficiently, accurately, and transparently.
               </p>
               <p>
-                In today's complex regulatory environment, manufacturers and importers often struggle with changing standards, unclear requirements, multiple authorities, and tight market timelines. <strong className="text-foreground">BISCRS Consultant was created to remove this complexity</strong> and provide a clear, structured, and reliable path to compliance.
+                In today's complex regulatory environment, manufacturers and importers often struggle with changing standards, unclear requirements, multiple authorities, and tight market timelines. BISCRS Consultant was created to remove this complexity and provide a clear, structured, and reliable path to compliance.
               </p>
               <p>
                 Our team brings <strong className="text-foreground">10 to 15 years of hands-on experience</strong> managing global compliance applications, product testing, and certifications across <strong className="text-foreground">India, Europe, the USA, and other regulated markets</strong>. This experience allows us to anticipate challenges, avoid common mistakes, and deliver compliance solutions that are accurate, efficient, and practical.
