@@ -1,5 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
-import { MessageCircle, Mail, Phone } from "lucide-react";
+import { MessageCircle, Mail, Phone, User, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
