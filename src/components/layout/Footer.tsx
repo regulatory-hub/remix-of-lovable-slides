@@ -118,8 +118,16 @@ export const Footer = () => {
               </a>
               <a href="tel:+917082130463" className="flex items-start gap-3 hover:opacity-100 transition-opacity">
                 <Phone className="h-5 w-5 mt-0.5 opacity-80" />
-                <span className="text-sm opacity-80">+91 70821 30463</span>
+                <span className="text-sm opacity-80">+91 7082130463</span>
               </a>
+              <div className="flex items-start gap-3">
+                <User className="h-5 w-5 mt-0.5 opacity-80" />
+                <span className="text-sm opacity-80">Manisha</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 mt-0.5 opacity-80" />
+                <span className="text-sm opacity-80">Office No. F1-907, Sector 16B, Greater Noida West, Uttar Pradesh, India</span>
+              </div>
             </div>
           </div>
         </div>
