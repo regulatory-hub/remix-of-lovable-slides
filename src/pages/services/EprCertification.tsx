@@ -6,7 +6,7 @@ const EprCertification = () => (
     icon={Leaf}
     title="EPR Certification"
     tagline="Extended Producer Responsibility for e-waste & plastic waste compliance"
-    description="EPR registration with CPCB is mandatory for producers, importers, and brand owners of electronics and plastic products. QnS handles the complete registration, annual filing, and compliance process."
+    description="EPR registration with CPCB is mandatory for producers, importers, and brand owners of electronics and plastic products. BISCRS handles the complete registration, annual filing, and compliance process."
     keyPoints={[
       "Mandatory for producers & importers",
       "CPCB registration & filing",

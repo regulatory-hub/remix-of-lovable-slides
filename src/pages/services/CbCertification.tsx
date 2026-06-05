@@ -6,7 +6,7 @@ const CbCertification = () => (
     icon={Globe}
     title="CB Certification"
     tagline="IECEE CB Scheme for multi-country acceptance of test reports"
-    description="The CB Scheme is an international system for mutual acceptance of test reports among 50+ participating countries. A single CB test report can be used to obtain national certifications worldwide, saving time and cost. QnS manages the entire process from lab coordination to report procurement."
+    description="The CB Scheme is an international system for mutual acceptance of test reports among 50+ participating countries. A single CB test report can be used to obtain national certifications worldwide, saving time and cost. BISCRS manages the entire process from lab coordination to report procurement."
     keyPoints={[
       "Accepted in 50+ countries",
       "Single test report, multiple markets",

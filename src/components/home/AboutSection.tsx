@@ -48,7 +48,7 @@ export const AboutSection = () => {
 
             <div className="space-y-4 text-muted-foreground text-sm md:text-base leading-relaxed">
               <p>
-                QnS stands for <strong className="text-foreground">Regulatory Compliance Solutions</strong> — a philosophy that defines how we approach testing, certification, and regulatory compliance.
+                BISCRS stands for <strong className="text-foreground">Regulatory Compliance Solutions</strong> — a philosophy that defines how we approach testing, certification, and regulatory compliance.
               </p>
               <p>
                 In today's complex regulatory environment, manufacturers and importers often struggle with changing standards, unclear requirements, multiple authorities, and tight market timelines. <strong className="text-foreground">BISCRS Consultant was created to remove this complexity</strong> and provide a clear, structured, and reliable path to compliance.

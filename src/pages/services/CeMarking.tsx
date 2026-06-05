@@ -6,7 +6,7 @@ const CeMarking = () => (
     icon={Zap}
     title="CE Marking"
     tagline="Mandatory conformity marking for products sold in the EU/EEA"
-    description="CE marking demonstrates that a product meets EU health, safety, and environmental protection requirements. QnS handles directive identification, testing coordination with notified bodies, technical file preparation, and Declaration of Conformity."
+    description="CE marking demonstrates that a product meets EU health, safety, and environmental protection requirements. BISCRS handles directive identification, testing coordination with notified bodies, technical file preparation, and Declaration of Conformity."
     keyPoints={[
       "Mandatory for EU/EEA market entry",
       "Directive & standard identification",

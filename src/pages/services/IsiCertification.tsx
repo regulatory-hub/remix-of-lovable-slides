@@ -6,7 +6,7 @@ const IsiCertification = () => (
     icon={Shield}
     title="ISI Certification"
     tagline="BIS product licensing for safety-critical electrical & mechanical products"
-    description="ISI mark certification is a mandatory BIS license for products impacting public safety. QnS manages factory inspections, lab testing, and the complete licensing process with BIS."
+    description="ISI mark certification is a mandatory BIS license for products impacting public safety. BISCRS manages factory inspections, lab testing, and the complete licensing process with BIS."
     keyPoints={[
       "Mandatory for safety-critical products",
       "Factory inspection coordination",
