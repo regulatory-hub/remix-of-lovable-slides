@@ -62,6 +62,31 @@ const Contact = () => {
             </a>
           </div>
 
+          {/* Contact Person + Address */}
+          <div className="max-w-2xl mx-auto grid sm:grid-cols-2 gap-6 mt-6">
+            <div className="flex flex-col items-center gap-4 p-8 bg-card rounded-xl border border-border text-center">
+              <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center">
+                <User className="h-8 w-8 text-accent" />
+              </div>
+              <h2 className="font-heading text-xl font-bold text-foreground">Contact Person</h2>
+              <p className="text-muted-foreground text-sm">Speak with our consultant</p>
+              <div className="text-foreground font-medium">Manisha</div>
+            </div>
+
+            <div className="flex flex-col items-center gap-4 p-8 bg-card rounded-xl border border-border text-center">
+              <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center">
+                <MapPin className="h-8 w-8 text-accent" />
+              </div>
+              <h2 className="font-heading text-xl font-bold text-foreground">Office Address</h2>
+              <p className="text-muted-foreground text-sm">Visit us</p>
+              <div className="text-foreground font-medium text-sm leading-relaxed">
+                Office No. F1-907, Sector 16B,<br />
+                Greater Noida West,<br />
+                Uttar Pradesh, India
+              </div>
+            </div>
+          </div>
+
           <div className="mt-12 text-center">
             <Button asChild variant="default" size="lg">
               <a href="https://wa.me/917082130463" target="_blank" rel="noopener noreferrer">
