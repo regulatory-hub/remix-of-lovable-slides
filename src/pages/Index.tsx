@@ -31,9 +31,9 @@ export default function Index() {
   const [sidebarWidth, setSidebarWidth] = useState(256);
   const [isResizing, setIsResizing] = useState(false);
   
-  // Derive slides from showcaseSlides with deterministic IDs (for presenter notes persistence)
+  // Derive slides from mystarterSlides with deterministic IDs (for presenter notes persistence)
   const slides = React.useMemo<SlideData[]>(() => 
-    showcaseSlides.map((s) => ({
+    mystarterSlides.map((s) => ({
       id: `slide-${s.name.toLowerCase().replace(/\s+/g, '-')}`,
       component: s.component,
       name: s.name,
